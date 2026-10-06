@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-labelledby="t d">
+  <title id="t">Resetta score-to-state flow</title>
+  <desc id="d">A baseline assessment and three daily questions are normalised and smoothed per dimension, combined into one score, mapped to one of four named states, and then drive a Burnout Mode view and a Recovery Mode view.</desc>
+  <defs>
+    <style>
+      text { font-family: Georgia, "Times New Roman", serif; fill: #3d322b; }
+      .sans { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .h { font-size: 28px; font-weight: 700; }
+      .s { font-size: 15px; fill: #6b5d52; }
+      .k { font-size: 12px; font-weight: 700; letter-spacing: 1.6px; fill: #6b5d52; }
+      .t { font-size: 20px; font-weight: 700; }
+      .b { font-size: 14.5px; fill: #4a3e36; }
+      .stage { fill: #f6f1e8; stroke: #3d322b; stroke-width: 2; }
+      .panel { fill: #f6f1e8; stroke: #3d322b; stroke-width: 2; }
+      .line { stroke: #3d322b; stroke-width: 2.2; fill: none; }
+      .thin { stroke: #8b7b6c; stroke-width: 1.6; fill: none; }
+      .chipt { font-size: 22px; font-weight: 700; fill: #ffffff; }
+      .chips { font-size: 13.5px; fill: #ffffff; }
+    </style>
+    <marker id="ar" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#3d322b"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="660" rx="18" fill="#e9e0d3"/>
+  <text x="40" y="52" class="h">From twelve questions to one calm state</text>
+  <text x="40" y="78" class="s sans">Self-reported answers are smoothed before they ever change what the user sees.</text>
+
+  <rect x="40" y="104" width="250" height="132" rx="14" class="stage"/>
+  <text x="58" y="130" class="k sans">ONCE, THEN ON DEMAND</text>
+  <text x="58" y="160" class="t">Baseline</text>
+  <text x="58" y="187" class="b sans">12 questions, 0 to 6 scale</text>
+  <text x="58" y="208" class="b sans">Sets the starting point; can be</text>
+  <text x="58" y="226" class="b sans">retaken, history is kept</text>
+
+  <rect x="330" y="104" width="250" height="132" rx="14" class="stage"/>
+  <text x="348" y="130" class="k sans">EVERY DAY</text>
+  <text x="348" y="160" class="t">Daily check-in</text>
+  <text x="348" y="187" class="b sans">3 questions, 1 per dimension</text>
+  <text x="348" y="208" class="b sans">Exhaustion, disengagement,</text>
+  <text x="348" y="226" class="b sans">inefficacy; Skip allowed</text>
+
+  <rect x="620" y="104" width="250" height="132" rx="14" class="stage"/>
+  <text x="638" y="130" class="k sans">PER DIMENSION</text>
+  <text x="638" y="160" class="t">Normalise + smooth</text>
+  <text x="638" y="187" class="b sans">Scale to 0-100, reverse-score</text>
+  <text x="638" y="208" class="b sans">positive items, then blend</text>
+  <text x="638" y="226" class="b sans">with history (moving average)</text>
+
+  <rect x="910" y="104" width="250" height="132" rx="14" class="stage"/>
+  <text x="928" y="130" class="k sans">ONE NUMBER</text>
+  <text x="928" y="160" class="t">Weighted score</text>
+  <text x="928" y="187" class="b sans">Three smoothed values merge</text>
+  <text x="928" y="208" class="b sans">into a 0-100 score; the top</text>
+  <text x="928" y="226" class="b sans">one is the dominant driver</text>
+
+  <path class="line" d="M290 170 H326" marker-end="url(#ar)"/>
+  <path class="line" d="M580 170 H616" marker-end="url(#ar)"/>
+  <path class="line" d="M870 170 H906" marker-end="url(#ar)"/>
+
+  <text x="40" y="276" class="k sans">SCORE MAPS TO ONE OF FOUR NAMED STATES</text>
+  <path class="line" d="M1020 236 V290"/>
+  <path class="thin" d="M180 290 H1020"/>
+  <path class="line" d="M180 290 V312" marker-end="url(#ar)"/>
+  <path class="line" d="M460 290 V312" marker-end="url(#ar)"/>
+  <path class="line" d="M740 290 V312" marker-end="url(#ar)"/>
+  <path class="line" d="M1020 290 V312" marker-end="url(#ar)"/>
+
+  <rect x="60" y="316" width="240" height="84" rx="14" fill="#1f9a8a"/>
+  <text x="80" y="352" class="chipt">Restored</text>
+  <text x="80" y="378" class="chips sans">lowest of the four</text>
+  <rect x="340" y="316" width="240" height="84" rx="14" fill="#c98a12"/>
+  <text x="360" y="352" class="chipt">Taxed</text>
+  <text x="360" y="378" class="chips sans">second of the four</text>
+  <rect x="620" y="316" width="240" height="84" rx="14" fill="#c9631f"/>
+  <text x="640" y="352" class="chipt">Overloaded</text>
+  <text x="640" y="378" class="chips sans">third of the four</text>
+  <rect x="900" y="316" width="240" height="84" rx="14" fill="#a3402f"/>
+  <text x="920" y="352" class="chipt">Depleted</text>
+  <text x="920" y="378" class="chips sans">highest of the four</text>
+
+  <path class="thin" d="M304 358 H336" marker-start="url(#ar)" marker-end="url(#ar)"/>
+  <path class="thin" d="M584 358 H616" marker-start="url(#ar)" marker-end="url(#ar)"/>
+  <path class="thin" d="M864 358 H896" marker-start="url(#ar)" marker-end="url(#ar)"/>
+  <text x="600" y="428" text-anchor="middle" class="s sans">States move in either direction as the smoothed score changes. Each state has its own illustrated home backdrop.</text>
+
+  <path class="line" d="M300 440 V474" marker-end="url(#ar)"/>
+  <path class="line" d="M900 440 V474" marker-end="url(#ar)"/>
+  <path class="thin" d="M300 440 H900"/>
+
+  <rect x="40" y="478" width="560" height="150" rx="14" class="panel"/>
+  <text x="60" y="504" class="k sans">HOME, MODE 1</text>
+  <text x="60" y="534" class="t">Burnout Mode</text>
+  <text x="60" y="562" class="b sans">Score ring and state pill on a state-specific illustrated backdrop</text>
+  <text x="60" y="584" class="b sans">Breakdown by dimension, each with a short status and advice line</text>
+  <text x="60" y="606" class="b sans">Daily insights timeline; days without a check-in are shown as estimates</text>
+
+  <rect x="640" y="478" width="520" height="150" rx="14" class="panel"/>
+  <text x="660" y="504" class="k sans">HOME, MODE 2</text>
+  <text x="660" y="534" class="t">Recovery Mode</text>
+  <text x="660" y="562" class="b sans">Insight card that names the dominant driver</text>
+  <text x="660" y="584" class="b sans">Dimension-specific recovery advice and a checklist (premium)</text>
+  <text x="660" y="606" class="b sans">Recovery schedule matched to the driver</text>
+</svg>
